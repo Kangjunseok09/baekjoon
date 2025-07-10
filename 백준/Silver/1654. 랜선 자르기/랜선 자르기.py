@@ -1,12 +1,10 @@
 import sys
 input = sys.stdin.readline
 k, n = map(int, input().split())
-list = []
-for i in range(k):
-  list.append(int(input()))
+list = [int(input()) for i in range(k)]
 
-  start = 1
-  end = list[0]
+start = 1
+end = list[0]
 while start <= end:
   lanline = 0
   mid = (start + end) // 2
